@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h1 class="title">Tic Tac Toe Game 🎮</h1>
+
+        <div class="turn">
+            <div class="choose">
+                <div class="turn1 b-s"> X </div>
+                <div class="turn2"> O </div>
+            </div>
+
+        </div>
+
+        <div class="game">
+
+            <button class="boxes box1 hover"></button>
+            <button class="boxes box2 hover"></button>
+            <button class="boxes box3 hover"></button>
+            <button class="boxes box4 hover"></button>
+            <button class="boxes box5 hover"></button>
+            <button class="boxes box6 hover"></button>
+            <button class="boxes box7 hover"></button>
+            <button class="boxes box8 hover"></button>
+            <button class="boxes box9 hover"></button>
+
+        </div>
+
+        <!-- Winner / Draw message -->
+        <div class="msg hide">
+            <span id="messageText"></span>
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <p>Scoreboard</p>
+            <span>X Wins: <span id="xScore">0</span></span>
+            <span>O Wins: <span id="oScore">0</span></span>
+            <span>Draws: <span id="drawScore">0</span></span>
+        </div>
+
+        <!-- Buttons -->
+        <button id="reset" class="btn">Reset</button>
+        <button id="ng" class="btn">New Game</button>
+        <button id="aiMode" class="btn">Play vs Computer</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
